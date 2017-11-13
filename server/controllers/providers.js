@@ -35,11 +35,11 @@ const queryBuilder = function(queryParameters) {
                 break;
             case 'max_average_covered_charges':
                 fields['Average Covered Charges'] = fields['Average Covered Charges'] || {};
-                fields['Average Covered Charges']['$lt'] = queryParameters[parameter]
+                fields['Average Covered Charges']['$lt'] = '$' + queryParameters[parameter]
                 break;
             case 'min_average_covered_charges':
                 fields['Average Covered Charges'] = fields['Average Covered Charges'] || { };
-                fields['Average Covered Charges']['$gt'] = queryParameters[parameter]
+                fields['Average Covered Charges']['$gt'] = '$' + queryParameters[parameter]
                 break;
             case 'state':
                 fields['Provider State'] = queryParameters[parameter]

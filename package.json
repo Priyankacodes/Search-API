@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node server/app.js",
-    "db-start": "mongod --dbpath ./database/data/db",
     "test": "mocha server/spec; RES=$?; kill %1; exit $RES"
   },
   "author": "Priyanka Shah",
