@@ -1,0 +1,27 @@
+{
+  "name": "searchapi",
+  "version": "1.0.0",
+  "description": "API to search providers",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/app.js",
+    "db-start": "mongod --dbpath ./database/data/db",
+    "test": "mocha server/spec; RES=$?; kill %1; exit $RES"
+  },
+  "author": "Priyanka Shah",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.9.6",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
