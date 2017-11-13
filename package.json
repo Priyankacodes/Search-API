@@ -4,7 +4,7 @@
   "description": "API to search providers",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/app.js",
+    "start": "node server/app.js",
     "db-start": "mongod --dbpath ./database/data/db",
     "test": "mocha server/spec; RES=$?; kill %1; exit $RES"
   },

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const config = require('../../config/default')['MONGODB_URL'];
-const opts = { useMongoClient: true };
+const DB_URL = process.env.MONGODB_URI || config
 
-var db = mongoose.createConnection(config);
+const db = mongoose.createConnection(DB_URL);
 
-let providerSchema = new mongoose.Schema({
+const providerSchema = new mongoose.Schema({
     "DRG Definition": String,
     "Provider Id": String,
     "Provider Name": String,
@@ -19,6 +19,4 @@ let providerSchema = new mongoose.Schema({
     "Average Medicare Payments": String      
 });
 
-var Providers = db.model('Provider', providerSchema);
-
-module.exports = Providers;
+module.exports = db.model('Provider', providerSchema);
