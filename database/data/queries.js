@@ -48,4 +48,6 @@ db.providers.find().forEach(function (doc) {
 //Check the result
 db.providers.findOne();
 
-//Upload the database mirror to MLab
+//Upload the database dump to MLab
+mongodump - d searchAPI - c providers - o database
+mongorestore -h ds259325.mlab.com:59325 -d heroku_t7kbxm0w -u heroku_t7kbxm0w -p 4c6oi4i04smv2ck9jkp9aqeja1 database/searchAPI/providers.bson

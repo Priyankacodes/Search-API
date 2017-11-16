@@ -23,7 +23,7 @@ app.use(parser.json());
 app.use(cors())
 
 // Set up our routes
-app.use('/providers', controllers.providers.get);
+app.use('/v1/providers', controllers.providers.get);
 
 // If we are being run directly, run the server.
 if (!module.parent) {
