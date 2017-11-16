@@ -14,6 +14,8 @@ To run test: npm test
 
 To view deployed version query: https://search-api-83181.herokuapp.com/v1/providers
 
+################################
+
 Accepted parameters (in any sequenece)
 
 Parameter - Data Type
