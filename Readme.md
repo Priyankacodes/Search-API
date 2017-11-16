@@ -1,6 +1,7 @@
 Search API
 
 Api using Node.js and MongoDb
+
 ################################
 
 Running the App
@@ -26,6 +27,7 @@ state - String (abbreviation of state e.g: CA)
 limit - Integer (> 0)
 
 Note: Result will be limited to 5 records by default
+
 ################################
 
 
