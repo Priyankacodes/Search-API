@@ -17,6 +17,7 @@ To view deployed version query: https://search-api-83181.herokuapp.com/v1/provid
 Accepted parameters (in any sequenece)
 
 Parameter - Data Type
+
 max_discharges - Integer (>0)
 min_discharges - Integer (>0)
 max_average_covered_charges - Float (> 0)
