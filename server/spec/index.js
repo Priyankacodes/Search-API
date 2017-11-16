@@ -74,4 +74,14 @@ describe('Provider API', function () {
         }
         );
     });
+    it('Fetch Provider Information for empty query string', function (done) {
+        request({
+            method: 'GET',
+            uri: 'http://127.0.0.1:3000/providers'
+        }, function (error, response, body) {
+            expect(response.statusCode).to.equal(200);
+            done();
+        }
+        );
+    });
 });
