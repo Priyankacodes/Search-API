@@ -14,9 +14,18 @@ const providerSchema = new mongoose.Schema({
     "Provider Zip Code": String,
     "Hospital Referral Region Description": String,
     "Total Discharges": Number,
-    "Average Covered Charges": String, 
-    "Average Total Payments": String,
-    "Average Medicare Payments": String      
+    "Average Covered Charges": {
+                                     "currency": String,
+                                     "amount": Number
+                              }, 
+    "Average Total Payments": {
+                                     "currency": String,
+                                     "amount": Number
+                              },
+    "Average Medicare Payments": {
+                                     "currency": String,
+                                     "amount": Number
+                                 }      
 });
 
 module.exports = db.model('Provider', providerSchema);
