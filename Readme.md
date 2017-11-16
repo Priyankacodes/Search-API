@@ -40,5 +40,18 @@ Note: Result will be limited to 5 records by default
 
 ################################
 
+Status code
+
+200 - Valid query
+
+400 - Invalid parameters
+
+404 - No Data Found for the query
+
+500 - Internal Server Error
+
+################################
+
+
 
 
