@@ -7,9 +7,6 @@ const controllers = require('./controllers');
 const morgan = require('morgan');
 const parser = require('body-parser');
 
-// Router
-const router = require('./routes.js');
-
 const app = express();
 
 module.exports.app = app;
